@@ -1,0 +1,18 @@
+{
+  "name": "restaurant-webpack",
+  "version": "1.0.0",
+  "description": "A simple restaurant page to practice webpack",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "Rodrigo Leche <rodeh.dev@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
