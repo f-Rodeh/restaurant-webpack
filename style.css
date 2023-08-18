@@ -48,7 +48,7 @@ header a {
   background: right center / 45% no-repeat url('./img/hero-food.png'), #0c0c0c;
   color: var(--txt-light);
 
-  padding: 64px 128px;
+  padding: 64px clamp(48px, 10vw,128px);
   display: grid;
   gap: 18px;
   align-content: center;
