@@ -1,1 +1,3 @@
-console.log('HELLO WEBPACK');
+import {setup} from "./dom-setup";
+
+setup();
