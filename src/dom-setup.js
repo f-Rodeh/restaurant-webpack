@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 import createFooter from "./footer";
-=======
->>>>>>> be55b5d709687d6eab7c1a2bb6653ac6bbeb3c59
+import Logo from './img/logoipsum-287.svg';
 export {setup}
 
 const setup = () => {
@@ -14,12 +12,8 @@ const setup = () => {
 
   root.append(
     Header(),
-<<<<<<< HEAD
     Main(),
     createFooter(),
-=======
-    Main()
->>>>>>> be55b5d709687d6eab7c1a2bb6653ac6bbeb3c59
   );
 }
 
@@ -27,7 +21,7 @@ function Header(){
   const output = document.createElement('header');
 
   const logo = create('img', 'logo');
-  logo.src = '../img/logoipsum-287.svg';
+  logo.src = Logo;
   logo.alt = '';
 
   const nav = create('nav');
