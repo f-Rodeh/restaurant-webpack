@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 import createFooter from "./footer";
+=======
+>>>>>>> be55b5d709687d6eab7c1a2bb6653ac6bbeb3c59
 export {setup}
 
 const setup = () => {
@@ -11,8 +14,12 @@ const setup = () => {
 
   root.append(
     Header(),
+<<<<<<< HEAD
     Main(),
     createFooter(),
+=======
+    Main()
+>>>>>>> be55b5d709687d6eab7c1a2bb6653ac6bbeb3c59
   );
 }
 
