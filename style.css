@@ -5,14 +5,14 @@
   --main-bg: #111111;
   --bg-light: #e9e9e9;
   --surface: #222;
-  --surface-light: hsl(237, 10%, 74%);
+  --surface-light: hsl(237, 10%, 80%);
   --txt-light: #e9e9e9;
   --txt-dark: #090909;
   --txt-low-contrast: #222;
   --accent: #f5a8bc;
 }
 
-body {
+body { 
   margin: 0; padding: 0;
   font-family: 'Poppins', Helvetica, sans-serif;
   color: var(--txt-dark);
@@ -133,3 +133,35 @@ h4 {
   font-size: 1rem;
   font-weight: 600;
 }
+
+
+
+/* footer template style start*/
+footer {
+  display: grid;
+  place-items: center;
+  background-color: var(--surface-color, #222222);
+
+  padding: 36px 0;
+  gap: 24px;
+}
+
+footer a {
+  text-decoration: none;
+  font-size: 1.2rem;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 150ms ease-in-out;
+}
+
+footer a:hover {
+  scale: 1.1;
+}
+
+footer ion-icon {
+  color: var(--main-txt, #fefefe);
+  font-size: 40px;
+}
+/* footer template style end */
