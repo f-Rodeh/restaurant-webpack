@@ -1,4 +1,4 @@
-export { create, paragraph, title }
+export { create, paragraph, title, write }
 
 function create(type, cls){
   const output = document.createElement(type);
@@ -16,4 +16,10 @@ function title( text ){
   const output = document.createElement('h1');
   output.textContent = text;
   return output;
+}
+
+function write( type, text ){
+  const output = document.createElement(type);
+  output.textContent = text;
+  return output
 }

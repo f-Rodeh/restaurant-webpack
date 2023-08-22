@@ -1,6 +1,7 @@
 import createFooter from "./footer";
 import Logo from './img/logoipsum-287.svg';
-import { Main as Home } from "./home" ;
+import { Main as Home } from "./home";
+import { Main as Menu } from "./menu";
 export {setup}
 
 const setup = () => {
@@ -8,7 +9,7 @@ const setup = () => {
 
   root.append(
     Header(),
-    Home(),
+    Menu(),
     createFooter(),
   );
 }
