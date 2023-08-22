@@ -40,7 +40,8 @@ header .logo {
   margin-right: auto;
 }
 
-header a {
+header span.tab {
+  cursor: pointer;
   color: var(--txt-light);
   text-decoration: none;
   margin: 0 1vw;

@@ -3,12 +3,13 @@ import Logo from './img/logoipsum-287.svg';
 import { Main as Home } from "./home";
 import { Main as Menu } from "./menu";
 import { Main as Contact } from "./contact";
-export {setup, update}
+export {setup, setMainContent}
 
 let Main = Home;
 
-function update( element ){
-
+function setMainContent( element ){
+  Main.replaceWith(element);
+  Main = element
 }
 
 const setup = () => {
@@ -30,9 +31,9 @@ function Header(){
 
   const nav = create('nav');
   nav.append(
-    navLink('Home', ''),
-    navLink('Menu', ''),
-    navLink('Contact', '')
+    tabElement('Home'),
+    tabElement('Menu'),
+    tabElement('Contact')
   )
 
   output.append(logo, nav);
@@ -45,10 +46,10 @@ function create(type, cls) {
   return output;
 }
 
-function navLink( text, href = '' ){
-  const output = document.createElement('a');
+function tabElement( text ){
+  const output = document.createElement('span');
+  output.classList.add('tab');
   output.textContent = text;
-  output.href = href;
+  output.id = text.toLowerCase().replace(' ', '');
   return output;
 }
-
