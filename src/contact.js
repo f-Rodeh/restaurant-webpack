@@ -3,16 +3,12 @@ export { Main }
 import { create, paragraph, title, write } from './dom-manager'
 import Img from './img/hero-contact.jpg'
 
-function Main(){
-  const output = document.createElement('main');
+const Main = document.createElement('main');
 
-  output.append(
-    Hero(),
-    Contact()
-  )
-
-  return output
-}
+Main.append(
+  Hero(),
+  Contact()
+)
 
 function Hero(){
   const output = document.createElement('section');

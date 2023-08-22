@@ -3,19 +3,15 @@ export { Main }
 import { create, paragraph, title, write } from './dom-manager'
 import Img from './img/hero-menu.jpg'
 
-function Main(){
-  const output = document.createElement('main');
+const Main = document.createElement('main');
 
-  output.append(
-    Hero(),
-    Starters(),
-    Dishes(),
-    Desserts(),
-    Cocktails()
-  )
-
-  return output
-}
+Main.append(
+  Hero(),
+  Starters(),
+  Dishes(),
+  Desserts(),
+  Cocktails()
+)
 
 function Hero(){
   const output = document.createElement('section');
