@@ -3,14 +3,20 @@ import Logo from './img/logoipsum-287.svg';
 import { Main as Home } from "./home";
 import { Main as Menu } from "./menu";
 import { Main as Contact } from "./contact";
-export {setup}
+export {setup, update}
+
+let Main = Home;
+
+function update( element ){
+
+}
 
 const setup = () => {
   const root = document.getElementById('content');
 
   root.append(
     Header(),
-    Contact(),
+    Main,
     createFooter(),
   );
 }

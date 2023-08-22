@@ -1,23 +1,25 @@
 import {create, paragraph, title} from "./dom-manager";
+import Img from './img/hero-food2.jpg'
 
 export { Main };
 
-function Main() {
-  const output = document.createElement('main');
+const Main = document.createElement('main');
 
-  output.append(
-    Hero(),
-    About(),
-    Hours(),
-    Location(),
-  )
-
-  return output;
-}
+Main.append(
+  Hero(),
+  About(),
+  Hours(),
+  Location(),
+)
 
 function Hero(){
   const output = document.createElement('section');
   output.id = 'hero';
+
+  let background = `linear-gradient(90deg, rgba(0,0,0,0.8) 30%, rgba(0,0,0,0) 100%)`
+  background += `, 0% 50% / cover url(${Img})`
+
+  output.style.background = background;
 
   const text = create('h1');
   text.innerHTML = '<em>Art</em> is in the <em>food</em>.';
