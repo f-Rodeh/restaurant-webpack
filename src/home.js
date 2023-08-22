@@ -16,7 +16,7 @@ function Hero(){
   const output = document.createElement('section');
   output.id = 'hero';
 
-  let background = `linear-gradient(90deg, rgba(0,0,0,0.8) 30%, rgba(0,0,0,0) 100%)`
+  let background = `linear-gradient(90deg, rgba(0,0,0,0.8) 30%, rgba(0,0,0,0) 75%)`
   background += `, 0% 50% / cover url(${Img})`
 
   output.style.background = background;
